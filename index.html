@@ -81,8 +81,8 @@
             }
 
             if (head.x < 0 || head.x >= 400 || head.y < 0 || head.y >= 400 || snake.some(segment => segment.x === head.x && segment.y === head.y)) {
-                alert("Game Over!");
-                restartGame();
+               
+                stopGame();
             }
 
             snake.unshift(head);
